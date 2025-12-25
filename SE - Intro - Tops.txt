@@ -1,0 +1,67 @@
+Software Engineering
+1.Overview of Programming
+-> github
+2.C
+3.C++
+4.Database
+
+Mon,Wed,Fri - Practice
+Tue,Thu,Sat - 5:00 to 6:30
+
+System Pass - tops?123
+Wifi - tops@0987
+
+
+Tops Career Center
+Personal details
+-> LinkedIn ID 
+-> Instagram ID 
+-> Aadhar card
+
+Assignments -> Module wise
+Assesments -> 
+Project -> 2[1+1]
+
+-> Create Your Account in Recorded Lectures-> Learnvern
+-> 
+----------------------------------------------------
+Github:
+Repo
+Workspace
+File Create
+File Upload
+Folder Create->/
+
+
+**************************************************************************************************************************************************
+29.11.2025
+*********************************************************************************************
+
+Github Upload:
+
+1)Drag and Drop
+
+2)Github Desktop Software - GUI
+
+3)GIT CMD -> R
+
+1. folder -> topstech -> hi.txt-> hello
+
+2. github desktop software
+click -> show in explorer -> copy paste your folder here
+
+3. write commit in summary 
+
+4. click on commit button
+
+5. click on push origin
+
+6. right click on topstech folder
+
+7. 
+git init
+git add -A
+git status 
+git commit -m "First Commit"
+git remote add origin your_link
+git push origin master
