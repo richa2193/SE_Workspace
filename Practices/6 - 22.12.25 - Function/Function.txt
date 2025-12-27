@@ -1,0 +1,47 @@
+Function : when you want to reuse the same code at that time you are using function.
+
+Types of function
+1) In-built Function
+2) User Defined Function
+
+
+1) In-built Function
+-> String Function 
+-> Math function 
+
+#include<string.h>
+strlen
+strcmp
+strcat
+
+
+#include<math.h>
+
+
+
+
+
+2) User Defined function
+-> with para with return type
+-> with para without return type
+-> with return type without para
+-> without return type without para
+
+
+
+-> Function will always create outside the main method.
+
+
+
+Syntax: 
+return funname(para)
+{
+
+}
+
+
+
+
+
+
+
