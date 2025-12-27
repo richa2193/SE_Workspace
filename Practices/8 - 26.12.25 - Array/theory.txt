@@ -1,0 +1,19 @@
+Array : Collection of elements that is called array. 
+
+Types of Array : 
+1) one dimensional
+2) two dimensional
+
+array -> [ ]
+
+array -> [size]
+
+-> array's index will start from 0
+
+->  
+
+user input marks
+
+addition -> total
+
+percentage
