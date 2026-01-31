@@ -1,0 +1,8 @@
+Diagrams:
+UML -> Unified Modeling Language
+
+Usecase
+Activity
+Class Diagram
+DFD diagram
+Flowchart

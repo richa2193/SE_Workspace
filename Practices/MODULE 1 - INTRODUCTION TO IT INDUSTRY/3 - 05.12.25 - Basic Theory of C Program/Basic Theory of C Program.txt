@@ -1,0 +1,41 @@
+-> C -> Procedural oriented programming
+
+Header Files:
+# -> pre-processor
+
+stdio -> standard input output
+conio -> console input output
+
+.h
+
+void -> null value return
+
+printf -> which will print something
+
+getch -> terminate the program
+
+
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	printf("Hello");
+	getch();	
+}
+
+data type:
+
+integer -> int -> numeric value -> %d
+float -> float -> decimal value -> 4 byte-> %f
+character -> char -> single alphabet -> %c
+double -> double -> decimal value -> 8 byte -> %lf
+
+variable declaration:
+
+datatype varname;
+int a;
+double b;
+char c;
+float e;
+
+-> variable will accept values

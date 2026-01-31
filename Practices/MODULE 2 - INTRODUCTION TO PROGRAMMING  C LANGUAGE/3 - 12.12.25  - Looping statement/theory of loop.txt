@@ -1,0 +1,29 @@
+Loop:when you want to run same code simunatnously 
+
+Types of Loop
+1)Entry Control Loop : for,while
+2)Exit Control Loop : do while
+
+1)
+for(initialization;condition;incre/decre)
+{
+	statement of code
+}
+
+2)
+initalization;
+while(condition)
+{
+statement of code
+incre/decre
+}
+
+
+3)
+initalization;
+do
+{
+statement of code
+incre/decre
+}
+while(condition);

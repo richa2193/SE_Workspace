@@ -1,0 +1,6 @@
+Pointer : it will store the address of the another variable.
+
+
+original parameter change - call by reference 
+
+original parameter  not change - call by value 

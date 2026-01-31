@@ -1,0 +1,8 @@
+conditional statement:
+1)if-else
+2)else if
+3)nested if
+4)switch-case-break
+
+Logical Op:
+&& , || ,!
