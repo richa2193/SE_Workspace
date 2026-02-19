@@ -1,0 +1,3 @@
+Method Overloading : when two or method having a same name but number of parameters are different.
+
+Method Overriding : when two or more methods having a same name and number of parameters are also same.

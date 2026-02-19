@@ -1,0 +1,18 @@
+abstract class : virtual method 
+
+keyword :  Exception handling 
+
+1. try 
+catch 
+throw 
+finally 
+
+
+original parameter change no thy - call by value 
+original parameter change thy - call by reference -  actual parameter 
+
+inline : program nu performance improve kre at a time.
+friend 
+virtual fun and pure virtual function
+unary operator 
+file handling  

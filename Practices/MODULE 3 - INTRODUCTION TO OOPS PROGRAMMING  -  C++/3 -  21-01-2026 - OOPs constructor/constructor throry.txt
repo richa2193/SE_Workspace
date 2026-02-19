@@ -1,0 +1,35 @@
+Constructor : Method having a same as a class name.
+
+-> Constructor does not have any return type.
+
+-> Constructor name be same but their parameter or Argument and data type of variables Should be different. 
+
+-> If constructor name same and parameter or argument or data types of variables all are same then it is called constructor overloading.
+
+-> if number of parameter same but data type must be change.
+
+-> if name data type same then first priority will be local variable. 
+-> in this case if we want to print right value then this keyword use and in it (.) not allowed. (->)
+
+-> this : passing the reference of global variable.
+
+-> when I will create object constructor will automatically call.
+
+Types of Constructor : 
+1)  Default : ()
+2) Parameterized : arguments  or parameter  
+3) copy : 
+
+
+
+constructor does not have return type . void
+
+stu 
+stu stu - name same of constructor but para diff (data type diff)
+constructor overloading 
+number of para same =  data type change 
+
+
+name data type same to local ne male priority 
+print karavu hoy to thias keyword. (. ) not Allowed -> 
+reference pass kre - global variable refer kre 

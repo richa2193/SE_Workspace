@@ -1,0 +1,4 @@
+inline function 
+friend function 
+unary operator 
+file handling open and close write 
