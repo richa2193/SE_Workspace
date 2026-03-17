@@ -1,0 +1,41 @@
+Database:
+
+Multiple Tables
+users
+courses
+assignment
+
+data insert,view,update,delete
+create,read,update,delete-CRUD
+
+Query
+
+database: mongo db,MYSQL,mercury,firebase,
+supabase,oracle
+
+MYSQL-database
+SQL-Structured query language
+
+Types of Commands in MYSQL
+1)DDL - data definition language
+create,alter,drop,truncate,rename
+
+2)DML - data manipulation language
+insert,update,delete
+
+3)DQL - data queyr language 
+select
+
+4)DCL - data control language
+rollback,commit
+
+
+
+
+
+
+
+
+
+
+

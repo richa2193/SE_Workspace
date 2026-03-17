@@ -1,0 +1,12 @@
+create database
+create table
+int  - data type 
+varchar - size 255
+change - 
+alter -  add column after db 
+drop - delete the column 
+after - used to add between 2 column 
+truncat - structure will be as always but value will be delete.
+
+update - update value 
+delete -  delete unknown data with column.

@@ -1,0 +1,49 @@
+1. CREATE TABLE student(stu_id int PRIMARY KEY AUTO_INCREMENT, name varchar(255), surname varchar (255), mobile_number int, email varchar(255), city varchar
+(255), course_id int)
+
+2. CREATE table course (course_id int PRIMARY KEY, course_name varchar(255), fees int);
+
+3. ALTER TABLE student add surname varchar(255) AFTER name
+
+4. ALTER TABLE course add stattus varchar(255)
+
+5. ALTER TABLE student MODIFY email int 
+
+6. ALTER TABLE student MODIFY email varchar(255)
+
+ 7. ALTER TABLE student CHANGE email pincode int 
+
+8. ALTER TABLE student CHANGE pincode email varchar(255)
+
+9. ALTER TABLE student add pincode int 
+
+10. ALTER TABLE student DROP pincode
+
+11. INSERT INTO student(name, surname, mobile_number, email, city, course_id) VALUES ('Richa', 'Parmar', '9726501389', 'richa@gmail.com', 'Ahmedabad', 101), 
+('Purvi', 'Rathod', '9099667796', 'palu@gmail.com', 'Baroda', 102),
+('Yash', 'Vala', '9898990177', 'yash@gmail.com', 'Ahmedabad', 103),
+('Jatin', 'Rathod', '9825654872', 'jatin@gmail.com', 'UK', 104),
+('Vaibhav', 'Parmar', '4596782653', 'vaibhav@gmail.com', 'USA', 105),
+('Chetna', 'Vaghela', '9173468256', 'chetna@gmail.com', 'Canada', 106),
+('Jiyan', 'Patel', '1346798523', 'jiyan@gmail.com', 'Rajkot', 107),
+('Kavya', 'Tank', '6432158973', 'kavya@gmail.com', 'Hydarabad', 108),
+('Hetal', 'solanki', '9933664875', 'hetal@gmail.com', 'Banglor', 109),
+('Hardik', 'Rakholiya', '9173330554', 'hardik@gmail.com', 'Pune', 110);
+
+12. UPDATE student SET surname = 'Ahir' WHERE stu_id = 5;
+
+13. SELECT * FROM `student`
+
+14. SELECT email FROM `student`
+
+15. SELECT * FROM `student` WHERE stu_id=2
+
+16. SELECT * FROM student ORDER BY surname ASC
+
+17. SELECT * FROM student ORDER BY stu_id ASC
+
+18. SELECT ucase(name) FROM student
+
+19. SELECT MID(name, 1, 4) FROM student;
+
+20. 

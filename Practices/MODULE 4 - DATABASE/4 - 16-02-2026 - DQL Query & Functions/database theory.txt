@@ -1,0 +1,40 @@
+DQL - 
+select - 3 query
+select * 
+select row vise
+select column vise  
+order by - asc - dsc  
+
+tcs 
+
+SELECT salary FROM `emp` WHERE name = 'Richa'
+SELECT name,salary,city FROM `emp` WHERE name = 'Richa'
+
+SELECT * FROM `emp` ORDER by name ASC;
+SELECT * FROM `emp` ORDER by name DESC;
+SELECT * FROM emp ORDER BY salary;
+
+functions in sql 
+1. scalar : 
+ucase - upper case - select ucase from tbn;
+lcase 
+mid - 1 to 3  - select mid(name,1,3) from tbn;
+now
+length - s
+round - float ma value 
+format 
+
+2. agreegate
+sum - select  sum(salary) from tablename
+max - vadhu ma vadhu 
+SELECT MAX(salary) FROM `emp`
+
+min - 
+AVG - average 
+first - limit keyword - select  (salary) from emp limit 1;
+last 
+count - select 
+
+second highest salary query - SELECT MAX(salary) AS second_highest from `emp` WHERE salary < (SELECT MAX(salary) FROM `emp`)
+
+DML - 10 query 

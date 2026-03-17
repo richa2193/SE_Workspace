@@ -1,0 +1,60 @@
+Procedure : 
+
+-> when you want to perform the same process
+again and again at that time you are 
+calling procedure
+
+
+DELIMITER //
+
+	CREATE PROCEDURE selectproc (INOUT myid int)
+	
+    BEGIN
+    	SELECT * FROM customers WHERE id = myid;
+    END //
+
+
+DELIMITER ;
+
+
+Trigger:
+Trigger:
+BEFORE INSERT
+AFTER INSERT
+BEFORE UPDATE
+AFTER UPDATE
+BEFORE DELETE
+AFTER DELETE
+
+DELIMITER $$
+
+	CREATE TRIGGER mytrigger3 AFTER DELETE ON subscribers FOR EACH ROW
+    
+    BEGIN 
+    	INSERT INTO audit_subscribers set action_performed='Deleted a  subscriber' ,fname =  old.fname;
+    END $$
+
+DELIMITER ;
+
+
+
+DELIMITER $$
+
+	CREATE TRIGGER mytrigger2 AFTER Update ON subscribers FOR EACH ROW
+    
+    BEGIN 
+    	INSERT INTO audit_subscribers set action_performed='Updated a  subscriber' ,fname =  old.fname;
+    END $$
+
+DELIMITER ;
+
+
+DELIMITER $$
+
+	CREATE TRIGGER mytrigger3 BEFORE INSERT ON subscribers FOR EACH ROW
+    
+    BEGIN 
+    	INSERT INTO audit_subscribers set action_performed='Inserted a  subscriber' ,fname =  new.fname;
+    END $$
+
+DELIMITER ;
