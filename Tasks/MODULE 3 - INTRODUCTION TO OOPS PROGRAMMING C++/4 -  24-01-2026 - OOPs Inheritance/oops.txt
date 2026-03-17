@@ -1,0 +1,24 @@
+hybrid = multiple + hirerchical    
+
+chrome://settings/content/all?sort=data-stored
+
+class shape
+{
+	value a b
+}
+
+class Rec : public shape  
+{
+}
+
+class tri 
+{
+}
+
+class circle 
+{
+}
+
+2. 
+take a user input from one class and this is parent class inherit that class 
+in other three class and multiply all the values

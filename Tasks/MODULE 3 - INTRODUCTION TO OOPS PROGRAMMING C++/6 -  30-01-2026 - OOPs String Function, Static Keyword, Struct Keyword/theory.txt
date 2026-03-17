@@ -1,0 +1,8 @@
+scope resolution operator :: 
+literal string format : hello 
+character array sting : 'c' 
+struct keyword
+string comparison
+getline use 
+static keyword
+
