@@ -1,0 +1,104 @@
+1. CREATE DATABASE Logitech
+
+2. CREATE table models(id int PRIMARY KEY AUTO_INCREMENT, model_name varchar(255), model_price int)
+
+3. ALTER TABLE models add manufacturer varchar(255)
+
+4. ALTER TABLE models ADD location varchar(255)
+
+5. INSERT INTO models (model_name, model_price, manufacturer, location) VALUES 
+('Dell XPS 13', 95000, 'DELL', 'USA'),
+('HP Pavillion 15', '65000', 'HP', 'China'),
+('Lenovo ThinkPad E14', '72000', 'Lenovo', 'India'),
+('Apple MacBook Air M2', '115000', 'Apple', 'USA'),
+('Asus ROG Strix G15', '98000', 'Asus', 'UK');
+
+6. UPDATE models set model_price = 120000 WHERE model_name = 'Apple MacBook Air M2';
+
+7. DELETE FROM models WHERE model_price = (SELECT min(model_price) FROM (SELECT * FROM models) as temp)
+
+7. DELETE FROM models ORDER BY model_	price ASC LIMIT 1;
+
+8. SELECT * FROM 'models' ORDER BY model_name ASC;
+
+9. CREATE TABLE model_logs(log_id int PRIMARY KEY AUTO_INCREMENT, action_perform varchar(255), model_id int, model_name varchar(255), model_price int, manufacturer varchar(255), location varchar(255));
+
+10. DELIMITER $$
+
+	CREATE TRIGGER model_after_insert AFTER INSERT ON models FOR EACH ROW
+    
+    BEGIN
+    
+    	INSERT INTO model_logs(action_perform, model_id, model_name, model_price, manufacturer, location) VALUES ('INSERT', NEW.id, NEW.model_name, NEW.model_price, NEW.manufacturer, NEW.location);
+    
+    END $$
+    
+DELIMITER ;
+
+DELIMITER $$
+
+CREATE TRIGGER model_after_insert
+AFTER INSERT ON models
+FOR EACH ROW
+BEGIN
+    INSERT INTO model_logs
+    SET action_type = 'INSERT',
+        model_id = NEW.id,
+        model_name = NEW.model_name,
+        model_price = NEW.model_price,
+        manufacturer = NEW.manufacturer,
+        location = NEW.location;
+END $$
+
+DELIMITER ;
+
+12. UPDATE 
+
+DELIMITER $$
+	
+    CREATE TRIGGER model_after_update AFTER UPDATE ON models FOR EACH ROW 
+
+	BEGIN
+    
+    INSERT INTO model_logs SET action_perform = 'UPDATE', model_id=NEW.id, model_price=NEW.model_price, manufacturer = NEW.manufacturer, location = NEW.location;
+    
+    END $$
+    
+DELIMITER ;
+
+BEGIN
+    
+    INSERT INTO model_logs SET action_perform = 'UPDATE', model_id=NEW.id, model_name=NEW.model_name, model_price=NEW.model_price, manufacturer = NEW.manufacturer, location = NEW.location;
+    
+    END
+
+11. insert a trigger 
+
+13. 
+
+UPDATE models SET model_price = 98000 WHERE model_name = 'Dell XPS 13';
+UPDATE models SET model_price = 98000 WHERE id=1;
+
+
+14. DELETE TRIGGER
+
+DELIMITER $$
+	
+    CREATE TRIGGER model_after_delete AFTER DELETE ON models FOR EACH ROW 
+
+	BEGIN
+    
+    INSERT INTO model_logs SET action_perform = 'DELETE', model_id=OLD.id, model_price=OLD.model_price, manufacturer = OLD.manufacturer, location = OLD.location;
+    
+    END $$
+    
+DELIMITER ;
+
+BEGIN
+    
+    INSERT INTO model_logs SET action_perform = 'DELETE', model_id=OLD.id, model_name=OLD.model_name, model_price=OLD.model_price, manufacturer = OLD.manufacturer, location = OLD.location;
+    
+    END
+
+15. DELETE FROM models WHERE id=8;
+
